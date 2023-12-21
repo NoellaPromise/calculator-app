@@ -13,18 +13,20 @@ function App() {
               type="button"
               value="AC"
               className="  bg-red-600  border-black rounded-sm m-2 border-none outline-0 w-12 h-12 cursor-pointer"
-              onClick={(e) => setValue("")}
+              onClick={() => setValue("")}
             />
             <input
               type="button"
               value="DE"
               className="  bg-red-600  border-black rounded-sm m-2 border-none outline-0 w-12 h-12 cursor-pointer"
+              // eslint-disable-next-line no-unused-vars
               onClick={(e) => setValue(value.slice(0, -1))}
             />
             <input
               type="button"
               value="."
               className="  bg-blue-400  border-black rounded-sm m-2 border-none outline-0 w-12 h-12 cursor-pointer"
+              // eslint-disable-next-line no-unused-vars
               onClick={(e) => setValue(value + e.target.value)}
             />
             <input
@@ -45,12 +47,14 @@ function App() {
               type="button"
               value="8"
               className="  bg-blue-400  border-black rounded-sm m-2 border-none outline-0 w-12 h-12 cursor-pointer "
+              // eslint-disable-next-line no-unused-vars
               onClick={(e) => setValue(value + e.target.value)}
             />
             <input
               type="button"
               value="9"
               className="  bg-blue-400  border-black rounded-sm m-2 border-none outline-0 w-12 h-12 cursor-pointer "
+              // eslint-disable-next-line no-unused-vars
               onClick={(e) => setValue(value + e.target.value)}
             />
             <input
@@ -129,7 +133,7 @@ function App() {
               type="button"
               value="="
               className="  bg-blue-400  border-black rounded-sm m-2 border-none outline-0 w-28 h-12 cursor-pointer"
-              onClick={e=>setValue(eval(value))}
+              onClick={() => setValue(eval(value))}
             />
           </div>
         </form>
@@ -137,5 +141,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
